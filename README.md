@@ -56,6 +56,21 @@ curl -X POST http://localhost:8000/ask \
 curl http://localhost:8000/health
 ```
 
+### List documents
+```bash
+curl http://localhost:8000/documents
+```
+
+### Delete a specific document
+```bash
+curl -X DELETE "http://localhost:8000/documents/source?filename=document.pdf"
+```
+
+### Delete all documents
+```bash
+curl -X DELETE http://localhost:8000/documents
+```
+
 ## Tech Stack
 
 - **FastAPI** - Web framework
